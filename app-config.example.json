@@ -1,0 +1,18 @@
+{
+  "name": "My Web App",
+  "install": ["npm install"],
+  "start": "npm run dev",
+  "healthCheck": "http://localhost:3000/api/health",
+  "baseUrl": "http://localhost:3000",
+  "specsDir": "generated-specs",
+  "features": [
+    {
+      "name": "User can log in",
+      "description": "Given a user with valid credentials (email: user@example.com, password: password123), when they navigate to /login and submit the form, they should be redirected to the dashboard and see a welcome message."
+    },
+    {
+      "name": "User can create a new item",
+      "description": "Given a logged-in user on the dashboard, when they click 'New Item', fill in the name field, and submit, a new item should appear in the list with the correct name."
+    }
+  ]
+}
